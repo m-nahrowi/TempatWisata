@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'ButtonAndDropDown.dart';
+import 'InputWidget.dart';
 
 void main() => runApp(DetailScreen());
 
@@ -75,6 +76,20 @@ class DetailScreen extends StatelessWidget {
                       child: Text(("Pindah ke latihan Button")))
                 ],
               ),
+            ),
+            Container(
+              margin: EdgeInsets.all(10.0),
+              child: Column(children: [
+                Text("Ini latihan input widget"),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => InputWidget()));
+                    },
+                    child: Text("pindah ke input widget"))
+              ]),
             )
           ],
         ),

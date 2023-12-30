@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'Down.dart';
 class ButtonDropDown extends StatelessWidget {
   const ButtonDropDown({super.key});
 
@@ -66,9 +66,9 @@ class ButtonDropDown extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => ButtonDropDown()));
+                                builder: (context) => Down()));
                       },
-                      child: Text(("Pindah ke latihan Button")))
+                      child: Text(("Pindah ke latihan DropDown")))
                 ],
               ),
             )
