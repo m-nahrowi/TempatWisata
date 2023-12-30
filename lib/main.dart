@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tempat_wisata/pages/DetailScreen.dart';
+import 'package:tempat_wisata/pages/detail_screen.dart';
 
 void main() => runApp(const MyApp());
 

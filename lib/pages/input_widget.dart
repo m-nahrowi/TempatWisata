@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(InputWidget());
+void main() => runApp(const InputWidget());
 
 class InputWidget extends StatefulWidget {
   const InputWidget({super.key});
@@ -23,17 +23,17 @@ class _InputWidgetState extends State<InputWidget> {
       ),
       body: ListView(
         children: <Widget>[
-          Text(
+          const Text(
             'Input widget',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
           ),
           Container(
-            margin: EdgeInsets.all(20.0),
-            padding: EdgeInsets.all(20.0),
+            margin: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-                Text('ini textfield biasa'),
+                const Text('ini textfield biasa'),
                 TextField(
                   decoration: const InputDecoration(
                     hintText: 'write yourname here...',
@@ -65,10 +65,10 @@ class _InputWidgetState extends State<InputWidget> {
 
           // Swicth
           Container(
-            margin: EdgeInsets.only(top: 10.0),
+            margin: const EdgeInsets.only(top: 10.0),
             child: Column(
               children: [
-                Text('ini Switch'),
+                const Text('ini Switch'),
                 Switch(
                     value: lightOn,
                     onChanged: (bool value) {
@@ -78,7 +78,7 @@ class _InputWidgetState extends State<InputWidget> {
 
                       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                           content: Text(lightOn ? 'Light On' : 'Light Off'),
-                          duration: Duration(seconds: 1)));
+                          duration: const Duration(seconds: 1)));
                     })
               ],
             ),
@@ -87,7 +87,7 @@ class _InputWidgetState extends State<InputWidget> {
           Container(
             child: Column(
               children: [
-                Text("Ini Radio"),
+                const Text("Ini Radio"),
                 ListTile(
                   leading: Radio(
                     value: 'dart',
@@ -99,7 +99,7 @@ class _InputWidgetState extends State<InputWidget> {
                       });
                     },
                   ),
-                  title: Text('Dart'),
+                  title: const Text('Dart'),
                 ),
                 ListTile(
                   leading: Radio(
@@ -112,7 +112,7 @@ class _InputWidgetState extends State<InputWidget> {
                       });
                     },
                   ),
-                  title: Text("kotlin"),
+                  title: const Text("kotlin"),
                 ),
                 ListTile(
                   leading: Radio(
@@ -125,7 +125,7 @@ class _InputWidgetState extends State<InputWidget> {
                       });
                     },
                   ),
-                  title: Text('Swift'),
+                  title: const Text('Swift'),
                 )
               ],
             ),
@@ -134,7 +134,7 @@ class _InputWidgetState extends State<InputWidget> {
           Container(
               child: Column(
             children: [
-              Text("ini Checkbox"),
+              const Text("ini Checkbox"),
               ListTile(
                 leading: Checkbox(
                   value: agree,
@@ -144,7 +144,7 @@ class _InputWidgetState extends State<InputWidget> {
                     });
                   },
                 ),
-                title: Text("Agree / Disagree"),
+                title: const Text("Agree / Disagree"),
               )
             ],
           ))
@@ -158,7 +158,7 @@ class _InputWidgetState extends State<InputWidget> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text('$language selected'),
-        duration: Duration(seconds: 1),
+        duration: const Duration(seconds: 1),
       ),
     );
   }

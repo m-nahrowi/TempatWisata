@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Down.dart';
+import 'down.dart';
+
 class ButtonDropDown extends StatelessWidget {
   const ButtonDropDown({super.key});
 
@@ -10,42 +11,43 @@ class ButtonDropDown extends StatelessWidget {
         title: const Text("Button dan Dropdown"),
       ),
       body: Container(
-        margin: EdgeInsets.all(5.0),
+        margin: const EdgeInsets.all(5.0),
         child: Column(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.all(16.0),
-              padding: EdgeInsets.all(10.0),
+              margin: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(10.0),
               child: Column(
                 children: [
-                  Text("ini adalah elevated button"),
+                  const Text("ini adalah elevated button"),
                   ElevatedButton(
                       onPressed: () {}, child: const Text("ElevantedButton")),
                 ],
               ),
             ),
-            Container(
-                child: Column(
+            // Container(
+            Column(
               children: [
-                Text("ini adalah text button"),
+                const Text("ini adalah text button"),
                 TextButton(onPressed: () {}, child: const Text("Text Button"))
               ],
-            )),
+            ),
+            // ),
             Container(
-              padding: EdgeInsets.all(10.0),
-              margin: EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(10.0),
+              margin: const EdgeInsets.all(10.0),
               child: Column(
                 children: [
-                  Text("Ini adalah OutlineButton"),
+                  const Text("Ini adalah OutlineButton"),
                   OutlinedButton(
-                      onPressed: () {}, child: Text("outlineButton")),
+                      onPressed: () {}, child: const Text("outlineButton")),
                 ],
               ),
             ),
             Container(
               child: Column(
                 children: [
-                  Text("IconButton"),
+                  const Text("IconButton"),
                   IconButton(
                     onPressed: () {
                       // aksi saat button ditekan
@@ -57,18 +59,17 @@ class ButtonDropDown extends StatelessWidget {
               ),
             ),
             Container(
+              margin: const EdgeInsets.all(10.0),
               child: Column(
                 children: [
-                  Text('ini drop down, (ongoing)'),
+                  const Text('ini drop down, (ongoing)'),
                   // klik tombol untuk ke page dropdown
                   ElevatedButton(
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Down()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => const Down()));
                       },
-                      child: Text(("Pindah ke latihan DropDown")))
+                      child: const Text(("Pindah ke latihan DropDown")))
                 ],
               ),
             )

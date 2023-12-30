@@ -17,18 +17,21 @@ class _DownState extends State<Down> {
         title: const Text("ini DropDown"),
       ),
       body: Container(
-        padding: EdgeInsets.all(10.0),
-        margin: EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(10.0),
+        margin: const EdgeInsets.all(10.0),
         child: DropdownButton<String>(
           items: const <DropdownMenuItem<String>>[
-            DropdownMenuItem<String>(child: Text("Dart"), value: 'Dart'),
             DropdownMenuItem<String>(
-              child: Text('Kotlin'),
-              value: 'Kotlin',
+              value: 'Dart',
+              child: Text("Dart"),
             ),
             DropdownMenuItem<String>(
-              child: Text('Swift'),
+              value: 'Kotlin',
+              child: Text('Kotlin'),
+            ),
+            DropdownMenuItem<String>(
               value: 'Swift',
+              child: Text('Swift'),
             ),
           ],
           value: language,
