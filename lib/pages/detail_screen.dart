@@ -21,6 +21,7 @@ class DetailScreen extends StatelessWidget {
                 'Farm House Lembang',
                 textAlign: TextAlign.center,
                 style: TextStyle(
+                  fontFamily: 'Oswald',
                   fontSize: 30.0,
                   fontWeight: FontWeight.bold,
                 ),
