@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'button_and_drop_down.dart';
 import 'input_widget.dart';
+import 'latihan_image.dart';
 
 void main() => runApp(const DetailScreen());
 
@@ -31,7 +32,7 @@ class DetailScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Column(
-                    children:  <Widget>[
+                    children: <Widget>[
                       Icon(Icons.calendar_today),
                       SizedBox(height: 8.0),
                       Text('Open Every'),
@@ -73,7 +74,7 @@ class DetailScreen extends StatelessWidget {
                             MaterialPageRoute(
                                 builder: (context) => const ButtonDropDown()));
                       },
-                      child: const  Text(("Pindah ke latihan Button")))
+                      child: const Text(("Pindah ke latihan Button")))
                 ],
               ),
             ),
@@ -90,6 +91,22 @@ class DetailScreen extends StatelessWidget {
                     },
                     child: const Text("pindah ke input widget"))
               ]),
+            ),
+            Container(
+              margin: const EdgeInsets.all(10.0),
+              child: Column(
+                children: [
+                  const Text("latihan image"),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const LatihanImage())
+                        );
+                      },
+                      child: Text('latihan image'))
+                ],
+              ),
             )
           ],
         ),
