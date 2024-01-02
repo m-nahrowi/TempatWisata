@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tempat_wisata/pages/expanded.dart';
 import 'button_and_drop_down.dart';
 import 'input_widget.dart';
 import 'latihan_image.dart';
@@ -145,7 +146,35 @@ class DetailScreen extends StatelessWidget {
                         child: const Text('latihan image'))
                   ],
                 ),
-              )
+              ),
+              Container(
+                margin: const EdgeInsets.all(10.0),
+                child: Column(children: [
+                  const Text("Ini latihan Expandeds"),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const LatihanExpanded()));
+                      },
+                      child: const Text("pindah ke Expanded()"))
+                ]),
+              ),
+              Container(
+                margin: const EdgeInsets.all(10.0),
+                child: Column(children: [
+                  const Text("Ini latihan flex dan expand"),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const InputWidget()));
+                      },
+                      child: const Text("pindah ke latihan flex dan expand"))
+                ]),
+              ),
             ],
           ),
         ),

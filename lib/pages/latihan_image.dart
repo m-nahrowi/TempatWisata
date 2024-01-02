@@ -22,7 +22,7 @@ class LatihanImage extends StatelessWidget {
           ),
           // image asset
           const Text('image dengan Asset'),
-          Image.asset('images/hans.jpg', width: 200, height: 200,),
+          Image.asset('images/wisata.jpg', width: 200, height: 200,),
         ],
       ),
     );
