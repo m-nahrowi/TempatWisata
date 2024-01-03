@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tempat_wisata/pages/expanded.dart';
+import 'package:tempat_wisata/pages/flex_expand.dart';
 import 'button_and_drop_down.dart';
 import 'input_widget.dart';
 import 'latihan_image.dart';
@@ -170,7 +171,7 @@ class DetailScreen extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const InputWidget()));
+                                builder: (context) => const FlexExpand()));
                       },
                       child: const Text("pindah ke latihan flex dan expand"))
                 ]),
