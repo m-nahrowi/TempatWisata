@@ -45,8 +45,20 @@ class FlexExpand extends StatelessWidget {
               ),
               Text(
                 message + ', sukses data terkirim',
-                style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                    fontSize: 24.0, fontWeight: FontWeight.bold),
               ),
+              Container(
+                child: Column(
+                  children: [
+                    OutlinedButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        child: const Text("Kembali"))
+                  ],
+                ),
+              )
             ],
           ),
         ));
