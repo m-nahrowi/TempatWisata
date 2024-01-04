@@ -6,7 +6,9 @@ import 'package:flutter/material.dart';
 
 class FlexExpand extends StatelessWidget {
   // const FlexExpand({super.key});
-  const FlexExpand({Key? key}) : super(key: key);
+
+  final String message;
+  const FlexExpand(this.message, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +42,11 @@ class FlexExpand extends StatelessWidget {
                   FlexibleWidget(),
                   ExpandedWidget(),
                 ],
-              )
+              ),
+              Text(
+                message + ', sukses data terkirim',
+                style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+              ),
             ],
           ),
         ));

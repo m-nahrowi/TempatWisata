@@ -8,6 +8,9 @@ import 'latihan_image.dart';
 void main() => runApp(const DetailScreen());
 
 class DetailScreen extends StatelessWidget {
+// kirim data
+  final String message = "rendy orton";
+
   const DetailScreen({super.key});
 
   @override
@@ -168,10 +171,10 @@ class DetailScreen extends StatelessWidget {
                   const Text("Ini latihan flex dan expand"),
                   ElevatedButton(
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const FlexExpand()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return  FlexExpand(message);
+                        }));
                       },
                       child: const Text("pindah ke latihan flex dan expand"))
                 ]),
