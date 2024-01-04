@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tempat_wisata/pages/expanded.dart';
-import 'package:tempat_wisata/pages/latihan_responsive.dart';
+import 'package:tempat_wisata/pages/responsive.dart';
 import 'flex_expand.dart';
 import 'button_and_drop_down.dart';
 import 'input_widget.dart';
