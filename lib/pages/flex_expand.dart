@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const FlexExpand());
-}
+// void main() {
+//   runApp(const FlexExpand());
+// }
 
 class FlexExpand extends StatelessWidget {
-  const FlexExpand({super.key});
+  // const FlexExpand({super.key});
+  const FlexExpand({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class FlexExpand extends StatelessWidget {
         ),
         body: SafeArea(
           child: Column(
-            children: const [
+            children: [
               Row(
                 children: const [
                   ExpandedWidget(),
@@ -30,8 +31,8 @@ class FlexExpand extends StatelessWidget {
               ),
               Row(
                 children: const [
-                  FlexExpand(),
-                  FlexExpand(),
+                  FlexibleWidget(),
+                  FlexibleWidget(),
                 ],
               ),
               Row(
@@ -48,7 +49,8 @@ class FlexExpand extends StatelessWidget {
 
 // Expanded
 class ExpandedWidget extends StatelessWidget {
-  const ExpandedWidget({super.key});
+  // const ExpandedWidget({super.key});
+  const ExpandedWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +76,7 @@ class ExpandedWidget extends StatelessWidget {
 
 // Flexible
 class FlexibleWidget extends StatelessWidget {
-  const FlexibleWidget({super.key});
+  const FlexibleWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
