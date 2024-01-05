@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'layout_builder.dart';
 
 void main() {
   runApp(const ResponsiveLayout());
@@ -31,6 +32,13 @@ class ResponsiveLayout extends StatelessWidget {
             style: const TextStyle(color: Colors.white, fontSize: 18.0),
             textAlign: TextAlign.center,
           ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return LayoutBuilderApp();
+                }));
+              },
+              child: const Text('responsive'))
         ],
       ),
     );
