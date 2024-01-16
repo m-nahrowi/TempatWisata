@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tempat_wisata/pages/expanded.dart';
+import 'package:tempat_wisata/pages/persiapan_flutix.dart';
 import 'package:tempat_wisata/pages/responsive.dart';
 import 'flex_expand.dart';
 import 'button_and_drop_down.dart';
@@ -191,6 +192,20 @@ class DetailScreen extends StatelessWidget {
                           }));
                         },
                         child: Text('Responsive Layout'))
+                  ],
+                ),
+              ),
+              Container(
+                child: Column(
+                  children: [
+                    ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) {
+                            return PersiapanFlutix();
+                          }));
+                        },
+                        child: Text('Persiapan Flutix'))
                   ],
                 ),
               )
